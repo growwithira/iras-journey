@@ -1,1 +1,5 @@
-<img src="assets/profile.png">
+:root{
+
+<img src="./assets/profile.png" alt="Ira">
+
+}
