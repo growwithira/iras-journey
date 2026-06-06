@@ -942,3 +942,17 @@ blockquote{
   border-radius:20px;
   object-fit:cover;
 }
+
+.pillars-card{
+  text-align:center;
+  padding:30px;
+}
+
+.pillars-card img{
+  width:100%;
+  max-width:450px;
+  height:auto;
+  display:block;
+  margin:0 auto 20px;
+  border-radius:20px;
+}
