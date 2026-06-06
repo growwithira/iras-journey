@@ -925,3 +925,10 @@ blockquote{
   border-radius:20px;
   margin-bottom:20px;
 }
+
+.army-card img{
+  width:100%;
+  max-width:500px;
+  display:block;
+  margin:auto;
+}
