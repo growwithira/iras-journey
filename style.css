@@ -956,3 +956,22 @@ blockquote{
   margin:0 auto 20px;
   border-radius:20px;
 }
+
+/* Journaling */
+
+#journaling {
+scroll-margin-top: 100px;
+}
+
+#journaling .section-title {
+margin-bottom: 30px;
+}
+
+#journaling .pillar-card {
+background: #fffdf8;
+border: 1px solid #f1e5d8;
+}
+
+#journaling h3 {
+color: #c9856c;
+}
