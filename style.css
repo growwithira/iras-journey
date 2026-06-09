@@ -1058,6 +1058,8 @@ color: #c9856c;
     scrollbar-width:none;
 }
 
+
+
 .journal-slider::-webkit-scrollbar{
     display:none;
 }
@@ -1069,4 +1071,15 @@ color: #c9856c;
     object-fit:cover;
     border-radius:15px;
     scroll-snap-align:center;
+}
+
+#music-btn{
+  position:fixed;
+  bottom:20px;
+  left:20px;
+  z-index:999;
+  border:none;
+  padding:12px 18px;
+  border-radius:50px;
+  cursor:pointer;
 }
