@@ -261,6 +261,42 @@ Moments From My Everyday Life
 
 </section>
 
+<section id="gallery" class="gallery-section">
+  <h2>Gallery</h2>
+
+  <div class="slider-container">
+
+    <button class="slider-btn prev" onclick="scrollGallery(-1)">
+      &#10094;
+    </button>
+
+    <div class="gallery-slider" id="gallerySlider">
+
+      <div class="slide">
+        <img src="assets/foto1.jpg" alt="Gallery 1">
+      </div>
+
+      <div class="slide">
+        <img src="assets/foto2.jpg" alt="Gallery 2">
+      </div>
+
+      <div class="slide">
+        <img src="assets/foto3.jpg" alt="Gallery 3">
+      </div>
+
+      <div class="slide">
+        <img src="assets/foto4.jpg" alt="Gallery 4">
+      </div>
+
+    </div>
+
+    <button class="slider-btn next" onclick="scrollGallery(1)">
+      &#10095;
+    </button>
+
+  </div>
+</section>
+
 <section class="challenge">
 
 <div class="challenge-card">
@@ -434,6 +470,17 @@ mengisi pikiran dengan ilmu.
 </footer>
   
 <script src="script.js"></script>
+
+<script>
+function scrollGallery(direction) {
+  const slider = document.getElementById("gallerySlider");
+
+  slider.scrollBy({
+    left: direction * 320,
+    behavior: "smooth"
+  });
+}
+</script>
 
 </body>
 </html>
