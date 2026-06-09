@@ -1139,3 +1139,9 @@ body::before {
     180px 60px;
 }
 
+body {
+    background-color: #F8F5F0;
+    background-image: url("assets/background-pattern1.png");
+    background-repeat: repeat;
+    background-size: 250px;
+}
