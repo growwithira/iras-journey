@@ -996,3 +996,27 @@ border: 1px solid #f1e5d8;
 #journaling h3 {
 color: #c9856c;
 }
+
+/* JOURNALING SLIDER */
+
+.journal-slider{
+    display:flex;
+    overflow-x:auto;
+    gap:12px;
+    padding:10px 0;
+    scroll-snap-type:x mandatory;
+    scrollbar-width:none;
+}
+
+.journal-slider::-webkit-scrollbar{
+    display:none;
+}
+
+.journal-slider img{
+    flex:0 0 85%;
+    width:85%;
+    height:300px;
+    object-fit:cover;
+    border-radius:15px;
+    scroll-snap-align:center;
+}
