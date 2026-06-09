@@ -14,6 +14,14 @@
   
 <body>
 
+<button id="music-btn">
+🎵 Play Music
+</button>
+
+<audio id="bgMusic" loop>
+  <source src="assets/anchor.mp3" type="audio/mpeg">
+</audio>
+
 <header>
 <div class="logo">
 <h2>Ira ♡</h2>
@@ -507,6 +515,23 @@ function scrollGallery(direction) {
     behavior: "smooth"
   });
 }
+</script>
+
+<script>
+const musicBtn = document.getElementById("music-btn");
+const music = document.getElementById("bgMusic");
+
+musicBtn.addEventListener("click", () => {
+
+  if (music.paused) {
+    music.play();
+    musicBtn.innerHTML = "⏸ Pause Music";
+  } else {
+    music.pause();
+    musicBtn.innerHTML = "🎵 Play Music";
+  }
+
+});
 </script>
 
 </body>
