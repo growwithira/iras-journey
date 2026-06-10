@@ -2,6 +2,27 @@
 // SCROLL REVEAL ANIMATION
 // ============================
 
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+
+link.addEventListener('click', function(e){
+
+const target = document.querySelector(this.getAttribute('href'));
+
+if(target){
+
+e.preventDefault();
+
+target.scrollIntoView({
+behavior:'smooth',
+block:'start'
+});
+
+}
+
+});
+
+});
+
 const revealElements = document.querySelectorAll(
 '.pillar-card, .gallery-grid img, .challenge-card, .army-card, .journey-card, .about-box, .collab-box'
 );
