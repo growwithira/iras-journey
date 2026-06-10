@@ -135,34 +135,53 @@ transform:translateY(-3px);
 /* ===== HERO ===== */
 
 .hero{
+    position: relative;
+    min-height: 100vh;
 
-padding:80px 8%;
+    background-image: url("images/background.jpg");
+    background-size: cover;
+    background-position: center;
 
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:60px;
-align-items:center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+    overflow: hidden;
 }
 
-.hero-image{
+.hero-overlay{
+    position: absolute;
+    inset: 0;
 
-position:relative;
-text-align:center;
+    background: rgba(248,243,236,0.55);
 
+    backdrop-filter: blur(2px);
+
+    z-index: 1;
 }
 
-.hero-image img{
+.hero-content{
+    position: relative;
+    z-index: 2;
 
-width:100%;
-max-width:420px;
+    max-width: 800px;
 
-border-radius:50%;
+    text-align: center;
 
-border:10px solid white;
+    padding: 20px;
+}
 
-box-shadow:0 15px 40px rgba(0,0,0,.12);
+.hero-content p{
+    color: #2f2f2f;
 
+    font-size: 1.4rem;
+
+    line-height: 1.9;
+
+    font-weight: 500;
+
+    text-shadow:
+        0 1px 4px rgba(255,255,255,.9);
 }
 
 .sticky-note{
