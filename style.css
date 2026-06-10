@@ -22,33 +22,30 @@ html{
 scroll-behavior:smooth;
 }
 
-body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #F8F5F0;
-    color: #4b4b4b;
-    overflow-x: hidden;
-    position: relative;
+body{
+    font-family:'Poppins',sans-serif;
+    color:#4b4b4b;
+    overflow-x:hidden;
+    position:relative;
+
+    background-image:url("assets/background-pattern-2.png");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
 }
 
 /* ===== BACKGROUND ===== */
 
 body::before{
+    content:"";
+    position:fixed;
+    inset:0;
 
-content:"";
-position:fixed;
-inset:0;
+    background:rgba(248,245,240,.78);
 
-background:
-radial-gradient(circle at top left,
-rgba(201,123,99,.08),
-transparent 30%),
-
-radial-gradient(circle at bottom right,
-rgba(220,202,244,.12),
-transparent 35%);
-
-pointer-events:none;
-z-index:-1;
+    pointer-events:none;
+    z-index:-1;
 }
 
 /* ===== NAVBAR ===== */
@@ -135,12 +132,9 @@ transform:translateY(-3px);
 /* ===== HERO ===== */
 
 .hero{
-    position: relative;
-
-    background-image: url("assets/background-pattern-2.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    position:relative;
+    overflow:hidden;
+}
 
     overflow: hidden;
 }
@@ -1123,66 +1117,4 @@ color: #c9856c;
   padding:12px 18px;
   border-radius:50px;
   cursor:pointer;
-}
-
-/* ==========================
-   EARTH TONE JOURNAL WALLPAPER
-   ========================== */
-
-body {
-    background-color: #F8F5F0;
-    position: relative;
-}
-
-body::before {
-    content: "";
-    position: fixed;
-    inset: 0;
-    z-index: -1;
-    pointer-events: none;
-
-    opacity: 0.65;
-
-    background-image:
-
-    /* Baby Breath Cream */
-    radial-gradient(circle, #E7D6C8 2px, transparent 2px),
-
-    /* Baby Breath Sage */
-    radial-gradient(circle, #B7C4A8 2px, transparent 2px),
-
-    /* Baby Breath Terracotta */
-    radial-gradient(circle, #C98C6B 2px, transparent 2px),
-
-    /* Flower */
-    radial-gradient(circle, #D9B99B 3px, transparent 3px),
-
-    /* Leaf cluster */
-    radial-gradient(ellipse 8px 4px, #B7C4A8 50%, transparent 55%),
-
-    /* Leaf cluster */
-    radial-gradient(ellipse 8px 4px, #C9D3BE 50%, transparent 55%);
-
-    background-size:
-    120px 120px,
-    140px 140px,
-    160px 160px,
-    180px 180px,
-    220px 220px,
-    260px 260px;
-
-    background-position:
-    10px 10px,
-    50px 70px,
-    90px 30px,
-    140px 120px,
-    60px 170px,
-    180px 60px;
-}
-
-body {
-    background-color: #F8F5F0;
-    background-image: url("assets/background-pattern1.png");
-    background-repeat: repeat;
-    background-size: 250px;
 }
