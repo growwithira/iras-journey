@@ -200,6 +200,30 @@ transform:translateY(-3px);
         0 1px 4px rgba(255,255,255,.9);
 }
 
+.hero-features{
+display:flex;
+flex-direction:column;
+gap:18px;
+margin:30px 0;
+}
+
+.feature-link{
+display:inline-block;
+background:#fff;
+padding:18px 24px;
+border-radius:22px;
+text-decoration:none;
+color:#555;
+font-weight:500;
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+transition:.3s;
+width:fit-content;
+}
+
+.feature-link:hover{
+transform:translateY(-4px);
+}
+
 .sticky-note{
 
 position:absolute;
