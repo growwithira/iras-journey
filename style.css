@@ -42,7 +42,7 @@ body::before{
     position:fixed;
     inset:0;
 
-    background: rgba(248,247,244,0.81);
+    background: rgba(248,245,240,0.65);
 
     pointer-events:none;
     z-index:-1;
