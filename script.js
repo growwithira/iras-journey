@@ -75,7 +75,9 @@ navLinks.forEach(link => {
 
 link.classList.remove('active');
 
-if(link.getAttribute('href').includes(current)){
+const href = link.getAttribute('href');
+
+if(href.startsWith('#') && href.includes(current)){
 
 link.classList.add('active');
 
